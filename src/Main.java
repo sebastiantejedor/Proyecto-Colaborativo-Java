@@ -28,13 +28,32 @@ public class Main {
 
         // Llama a tu función de nota alta y baja aquí
 
-        // Llama a tu función de mejora aquí
+        dev6(nombre, nota1, nota2, nota3);
+
         teclado.close();
     }
 
+    static void dev6(String nombre, double nota1, double nota2, double nota3) {
 
-    // ZONA DE CREACIÓN DE FUNCIONES
+        System.out.println();
 
+        System.out.println("Hola " + nombre + ".");
+        System.out.println("Tus notas son:");
 
+        System.out.println("Nota 1: " + nota1);
+        System.out.println("Nota 2: " + nota2);
+        System.out.println("Nota 3: " + nota3);
 
+        double menor = Math.min(nota1, Math.min(nota2, nota3));
+
+        if (menor == nota1) {
+            System.out.println("La nota que requiere mayor mejora es la Nota 1: " + nota1);
+        } else if (menor == nota2) {
+            System.out.println("La nota que requiere mayor mejora es la Nota 2: " + nota2);
+        } else {
+            System.out.println("La nota que requiere mayor mejora es la Nota 3: " + nota3);
+        }
+
+        System.out.println("Si mejoras esta nota, podrás aumentar tu promedio general.");
+    }
 }
