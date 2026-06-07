@@ -18,8 +18,7 @@ public class Main {
 
         System.out.println("\n--- Resultados para " + nombre + " ---");
 
-        // Llama a tu función de promedio aquí
-
+        PromedioNotas(nota1,nota2,nota3);
         // Llama a tu función de aprobar/reprobar aquí
 
         // Llama a tu función de nota del final aquí
@@ -32,6 +31,11 @@ public class Main {
 
         teclado.close();
     }
+  
+      public static void PromedioNotas(double n1, double n2, double n3){
+        double promedio = (n1+n2+n3)/3;
+        System.out.println("El promedio de las 3 notas es "+promedio);
+    }
 
     static void dev6(String nombre, double nota1, double nota2, double nota3) {
 
@@ -40,9 +44,7 @@ public class Main {
         System.out.println("Hola " + nombre + ".");
         System.out.println("Tus notas son:");
 
-        System.out.println("Nota 1: " + nota1);
-        System.out.println("Nota 2: " + nota2);
-        System.out.println("Nota 3: " + nota3);
+
 
         double menor = Math.min(nota1, Math.min(nota2, nota3));
 
