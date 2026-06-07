@@ -18,8 +18,7 @@ public class Main {
 
         System.out.println("\n--- Resultados para " + nombre + " ---");
 
-        // Llama a tu función de promedio aquí
-
+        PromedioNotas(nota1,nota2,nota3);
         // Llama a tu función de aprobar/reprobar aquí
 
         // Llama a tu función de nota del final aquí
@@ -35,6 +34,10 @@ public class Main {
 
     // ZONA DE CREACIÓN DE FUNCIONES
 
+    public static void PromedioNotas(double n1, double n2, double n3){
+        double promedio = (n1+n2+n3)/3;
+        System.out.println("El promedio de las 3 notas es "+promedio);
+    }
 
 
 }
