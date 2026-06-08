@@ -12,7 +12,7 @@ Actividad Colaborativa haciendo uso de Github
 
 
 # Colaboradores
-- Sebastian David Tejedor Montiel
-- Antonio Jesús Palmieri Luna
-- Felipe enrique cueto linares
-- Kelly Daymar Sierra Perez
+- Antonio Jesús Palmieri Luna (Calcular promedio de 3 notas) Dev1
+- Felipe enrique cueto linares (Indicar si aprueba o reprueba) Dev2
+- Kelly Daymar Sierra Perez (Calcular nota necesaria en el final) Dev3
+- Sebastian David Tejedor Montiel (Clasificar desempeño: bajo, medio, alto) Dev 4 && Integrador
