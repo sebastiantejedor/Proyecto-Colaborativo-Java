@@ -18,10 +18,7 @@ public class Main {
         promedioNotas(nota1, nota2, nota3);
         aprobarReprobar(nota1, nota2, nota3);
         notaFinalNecesaria(nota1, nota2, nota3);
-        // Llama a tu función de clasificar desempeño aquí
-        // Llama a tu función de nota alta y baja aquí
-        dev6(nombre, nota1, nota2, nota3);
-
+        desempeñoEstudiante(nota1, nota2, nota3);
         teclado.close();
     }
 
@@ -45,8 +42,6 @@ public class Main {
         double suma = n1 + n2 + n3;
         double notaNecesaria = totalNecesario - suma;
 
-        System.out.println("\n--- NOTA FINAL NECESARIA ---");
-
         if (notaNecesaria > 5) {
             System.out.println("Con estas notas no es posible aprobar, incluso sacando 5.0 en el examen.");
         } else if (notaNecesaria <= 0) {
@@ -56,20 +51,23 @@ public class Main {
         }
     }
 
-    public static void dev6(String nombre, double nota1, double nota2, double nota3) {
-        System.out.println();
-        System.out.println("Hola " + nombre + ".");
+    public static void desempeñoEstudiante(double nota1, double nota2, double nota3) {
+        double promedio = (nota1 + nota2 + nota3) / 3;
+        String desempeño;
 
-        double menor = Math.min(nota1, Math.min(nota2, nota3));
-
-        if (menor == nota1) {
-            System.out.println("La nota que requiere mayor mejora es la Nota 1: " + nota1);
-        } else if (menor == nota2) {
-            System.out.println("La nota que requiere mayor mejora es la Nota 2: " + nota2);
+        if (promedio >= 4.5) {
+            desempeño = "Excelente";
+        } else if (promedio >= 4.0) {
+            desempeño = "Muy Bueno";
+        } else if (promedio >= 3.5) {
+            desempeño = "Bueno";
+        } else if (promedio >= 3.0) {
+            desempeño = "Suficiente";
         } else {
-            System.out.println("La nota que requiere mayor mejora es la Nota 3: " + nota3);
+            desempeño = "Insuficiente";
         }
 
-        System.out.println("Si mejoras esta nota, podrás aumentar tu promedio general.");
+        System.out.println("Desempeño del estudiante: " + desempeño);
     }
+
 }
