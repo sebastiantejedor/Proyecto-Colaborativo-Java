@@ -19,7 +19,8 @@ public class Main {
         System.out.println("\n--- Resultados para " + nombre + " ---");
 
         PromedioNotas(nota1,nota2,nota3);
-        // Llama a tu función de aprobar/reprobar aquí
+        // Llama a tu función de aprobar/reprobar aqui
+        notaFinalNecesaria(nota1, nota2, nota3);
 
         // Llama a tu función de nota del final aquí
 
@@ -36,15 +37,30 @@ public class Main {
         double promedio = (n1+n2+n3)/3;
         System.out.println("El promedio de las 3 notas es "+promedio);
     }
+    public static void notaFinalNecesaria(double n1, double n2, double n3) {
 
+        double notaMinima = 3.0; // 👈 aquí defines la nota de aprobación
+        double totalNecesario = notaMinima * 4;
+
+        double suma = n1 + n2 + n3;
+
+        double notaNecesaria = totalNecesario - suma;
+
+        System.out.println("\n--- NOTA FINAL NECESARIA ---");
+
+        if (notaNecesaria > 5) {
+            System.out.println("Con estas notas no es posible aprobar, incluso sacando 5.0 en el examen.");
+        } else if (notaNecesaria <= 0) {
+            System.out.println("Ya tienes la materia aprobada, no necesitas examen final.");
+        } else {
+            System.out.printf("Para aprobar necesitas sacar %.2f en el examen final.%n", notaNecesaria);
+        }
+    }
     static void dev6(String nombre, double nota1, double nota2, double nota3) {
 
         System.out.println();
 
         System.out.println("Hola " + nombre + ".");
-        System.out.println("Tus notas son:");
-
-
 
         double menor = Math.min(nota1, Math.min(nota2, nota3));
 
