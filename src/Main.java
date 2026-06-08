@@ -39,7 +39,7 @@ public class Main {
     }
     public static void notaFinalNecesaria(double n1, double n2, double n3) {
 
-        double notaMinima = 3.0; // 👈 aquí defines la nota de aprobación
+        double notaMinima = 3.0;
         double totalNecesario = notaMinima * 4;
 
         double suma = n1 + n2 + n3;
