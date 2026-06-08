@@ -15,3 +15,4 @@ Actividad Colaborativa haciendo uso de Github
 - Sebastian David Tejedor Montiel
 - Antonio Jesús Palmieri Luna
 - Felipe enrique cueto linares
+- Kelly Daymar Sierra Perez
